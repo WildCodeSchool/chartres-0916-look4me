@@ -1,0 +1,30 @@
+<div id="admin-bg" class="container-fluid" ng-controller="LoginController as vm" ng-init="vm.init()">
+    <div id="admin" class="row">
+        <form ng-if="!vm.isLoggedIn()" class="navbar-form navbar-right" role="login" ng-submit="vm.login()">
+            <div class="form-group" ng-class="{'has-error': vm.error}">
+                <input type="text" class="form-control input-sm" placeholder="Username" ng-model="vm.username" autocapitalize="none">
+            </div>
+            <div class="form-group" ng-class="{'has-error': vm.error}">
+                <input type="password" class="form-control input-sm" placeholder="Password" ng-model="vm.password" autocapitalize="none">
+            </div>
+            <button type="submit" class="btn btn-sm btn-success">Login</button>
+        </form>
+        <nav ng-if="isLoggedIn" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/admin">
+                        Welcome Back {{vm.loggedInUser}}
+                    </a>
+                    <ul class="nav navbar-nav">
+                        <li class ="active"><a href="#/admin/news">News</a></li>
+                        <li><a href="#/admin/gallery">Gallerie</a></li>
+                        <li><a href="#/admin/services">Services</a></li>
+                        <li><a href="#/admin/services">A propos</a></li>
+                        <li><a href="#/admin/services">Partenaires</a></li>
+                    </ul>
+                    <button class="btn btn-info" ng-click="vm.logout()"> Log Out</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div id="admin-bg" class="container-fluid">
+    <div id="admin" class="row">
+        <ul class="list-group" ng-repeat="service in vm.services">
+            <li class="list-group-item">
+                {{service.type }} - {{service.genre}} - {{service.titre}} <a class="btn btn-primary" href="#/admin/services/update/{{service._id}}"> Edit </a> <a class="btn btn-warning" ng-click="vm.deleteServices(service._id)"> Supprimer </a>
+            </li>
+        </ul>
+        <a class="btn btn-primary" href="#/admin/services/add"> Ajouter un service </a>
+    </div>
+</div>

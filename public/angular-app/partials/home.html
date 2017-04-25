@@ -1,0 +1,126 @@
+<div id="haut" class="container-fluid" >
+  <div class="row">
+    <div  id="navigation">
+      <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+
+      <nav class="menuhome">
+        <ul >
+          <li><a class="iconhome page-scroll" href="#haut" ng-click="tab = 4"><i class="glyphicon glyphicon-home page-scroll"></i></a></li>  
+          <li class="sousmenushome"><a>A propos<span class="iconfleche"><i class="glyphicon glyphicon-menu-down"></i> </span></a>
+            <ul>
+              <li><a href="#/presentation" ng-click="tab = 4">Présentation</a></li>
+              <li><a href="#/news" ng-click="tab = 4">News / Presse</a></li>
+            </ul>
+          </li>
+          <li><a href="#/contact" ng-click="tab = 5">Contact<span class="iconcontact"><i class="glyphicon glyphicon-envelope"></i></span></a></li>
+          <li><a href="https://www.facebook.com/look4me.fr/" target="_blanck" class="iconhome" ><i class="fa fa-facebook" ></i>
+          </a></li> 
+          <li><a class="iconhome" href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul> 
+        <label for="navbar-checkbox" class="navbar-handle"></label>
+      </nav>
+    </div>
+  </div>
+
+
+  <div id="wrap" class="container-fluid">
+
+    <div class="row">
+      <div id="bandeaunoir" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+          <div id="bandeaulogo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="logointro"><img class="img-responsive" src="../img/LOGO_intro_big.png"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="menuprestation" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <p>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/particuliers" ng-click="tab = 1">Particuliers</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/entreprises" ng-click="tab = 2">Entreprises</a></span>
+            <span class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/portfolio" ng-click="tab = 3">Avant / Après</a></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+       <span id="flechescroll" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <a href="#homeprestation" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
+       </span>
+     </div>
+   </div><!--fin row bandeaux-->
+ </div><!--fin row menu logo et particuliers-->
+</div>
+<div id="vide" class="row"></div>
+<!-- HOME A PROPOS-->
+<div id="homeprestation" class="container-fluid">
+  <h1 id="logolook4me-home"></h1>
+  <div class="row">
+  <div id="bienvenue" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div id="salon" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h1 class="titre-salon">{{home.space.title}}</h1>
+        <span id="photo-salon"><img class="img-responsive" ng-src="{{home.space.photo}}"></span>
+        <p id="paragraphe-salon" class="col-sm-12 col-md-12 col-lg-12">{{home.space.paragh}}
+        </p>
+        <p id="btn-look"><a href="#/presentation"><button class="animbutton"><span>A propos</span></button></a></p><br/>
+      </div>
+      <!--CARROUSEL-->
+      <div id="slide" class="col-sm-12 col-md-6"> 
+      
+        <h1 class="titre-slide">{{home.caption.title}}</h1><br/>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div id="slideHome" class="carousel-inner" role="listbox">
+            <div ng-class="{item:true, active: ($index === 0)}" ng-repeat="diaporama in home.portfolio">
+              <div class="row">
+                <div class=" col-xs-6 col-sm-6 col-md-6">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portfolio/{{diaporama.img[0]}}" alt="...">
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                  <img  ng-show="true" class="img-responsive" ng-src="../img/portfolio/{{diaporama.img[1]}}" alt="...">
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" target="_self">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control nav2" href="#carousel-example-generic" role="button" data-slide="next" target="_self">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>    
+        <p id="paragraphe-salon2">{{home.caption.paragh}}</p>
+        <p id="suite"><a href="#/portfolio"><button  class="animbutton"><span>Voir la galerie</span></button></a></p><br/>
+     <!--slide-->
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--JQUERY SCROLL NAV-->
+<script type="text/javascript">
+  $(document).ready(function(){
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+
+});
+
+</script>

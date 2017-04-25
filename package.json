@@ -1,0 +1,26 @@
+{
+  "name": "look4me",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "startdev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular-jwt": "^0.1.8",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.2.1",
+    "mongoose": "^4.6.8",
+    "morgan": "~1.7.0",
+    "mv": "^2.1.1",
+    "nodemailer": "^2.6.4",
+    "nodemailer-smtp-pool": "^2.8.2",
+    "serve-favicon": "~2.3.0"
+  }
+}

@@ -1,0 +1,54 @@
+
+.footer{
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.partenaire{
+	background-color: black;
+	padding: 20px;
+
+}
+
+.footer h4{
+    color:#BF813F;
+}
+
+.m-partenaires{
+	margin-left: 17px;
+	margin-bottom: 20px;
+
+}
+
+footers ul{
+  list-style-type: none;
+  padding:0px;
+}
+
+li a.footer-a{
+	color: white; 
+	text-decoration: none;
+}
+
+a.footer-a :hover{
+	font-size: 13px;
+	color: #BF813F; 
+	text-decoration: underline;
+}
+
+.m-footer{
+	margin-top: 95px;
+}
+
+.color-p-footer{
+	font-family: 'El Messiri', sans-serif;
+	color:white;
+	font-size: 13px;
+}
+
+.font-p-partenaire{
+	font-family: 'El Messiri', sans-serif;
+	color:white;
+	font-size: 13px;
+	line-height: 12px;
+}

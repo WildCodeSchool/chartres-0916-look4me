@@ -1,0 +1,77 @@
+
+   <nav class="navbar navbar-default bg-nav navbar-fixed-top" ng-init="tab = 6">
+   <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" id="burger-nav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#/"><img src="img/logo/logo-mini.png" class="img-logo-mini-m"></a>
+    </div>    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right yolo">
+                <li>
+                  <a href="#/" class="p-fa-home" style="padding: 0px;" ng-click="tab = 6"><i class="fa fa-home fa-lg background-gold" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 1}" ng-class="{item:true, active: ($index === 1)}">
+                  <a href="#/particuliers" ng-click="tab = 1">
+                    <p class="color-p-sidr">Particuliers</p>
+                  </a></li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 2}" ng-class="{item:true, active: ($index === 2)}">
+                  <a href="#/entreprises" ng-click="tab = 2">
+                    <p class="color-p-sidr">Entreprises</p>
+                  </a></li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 3}" ng-class="{item:true, active: ($index === 3)}">
+                  <a href="#/portfolio" ng-click="tab = 3">
+                    <p class="color-p-sidr">Avant/Après</p>
+                  </a>
+                </li>
+                <li><a href=""></a></li>
+
+                <li class="dropdown" ng-class="{active:tab === 4}" ng-class="{item:true, active: ($index === 4)}">
+                  <a class="dropdown-toggle hover-nav hvr-bounce-to-bottom" id="abouther" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="tab = 4">A propos<span class="iconfleche">
+                  <i class="glyphicon glyphicon-menu-down"></i></span>
+                  </a>
+                    <ul class="dropdown-menu" id="dropdown-menu" ng-class="{active:tab === 4}">
+                      <li>
+                        <a href="#/presentation" ng-click="tab = 4">
+                          <p class="color-p-sidr-dropdown">Presentation</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#/news" class="m-news" ng-click="tab = 4">
+                          <p class="color-p-sidr-dropdown">Presse/News</p>
+                        </a>
+                      </li>
+                    </ul>
+                </li>
+                <li><a href=""></a></li>
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 5}" ng-class="{item:true, active: ($index === 5)}">
+                  <a href="#/contact" ng-click="tab = 5">
+                    <p class="color-p-sidr">Contact</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/look4me.fr" target="_blank" class="fa-p-none"><i class="fa fa-facebook fa-lg background-gold menu" aria-hidden="true" style="width: 36px;"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="fa-p-none" style="padding: 0px; margin-left: 0px;"><i class="fa fa-instagram fa-lg background-gold menu" aria-hidden="true"></i>
+                  </a>
+                </li>
+            </ul> 
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+

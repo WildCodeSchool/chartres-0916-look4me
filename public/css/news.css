@@ -1,0 +1,187 @@
+
+/******************************* news ****************************/
+
+.title-news{
+	background-color: transparent;
+	text-align: center;
+	margin: 0px;
+}	
+
+.p-h1-title-news{
+	margin-top: 100px; 
+	margin-bottom: 70px;
+}
+	
+.color-presse-p{
+	color: black;
+}
+.date{
+	position: absolute;
+	right:0px;color:black; 
+	padding-right: 10px;
+}
+
+.num-date{
+	padding-top: 12px;
+	color:white;
+
+}
+
+.num-date3{
+	padding-top: 30px;
+	color:white;
+}
+
+.underline_text {
+      border-bottom: solid 4px white;
+      display: inline;
+}
+
+.c-black{
+	color:#DAB270;
+	padding-left: 10px;
+}
+
+.c-black3{
+	color:white;
+
+}
+
+.background-gold-news{
+	color: white; 
+	background-color: #C79C51; 
+	margin-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px ;
+	padding-right: 10px;
+}
+
+#m-news{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 50px;
+}
+
+
+#m-presse{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+	
+}
+
+.p-news{
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.color-b-img{
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
+	height: 100px;
+	text-align: center;
+}
+
+.color-b-img2{
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
+	height: 100px;
+	text-align: center;
+}
+
+.color-b-img3{
+	background-color: #C79C51;
+	width: ;
+	padding-right: 10px;
+	padding-left: 10px; 
+	height: 100px;
+	text-align: center;
+}
+
+.overline-month{
+	text-decoration: overline;
+	margin-top: 0px;
+}
+
+td p {
+	color: #000;
+}
+
+.table>tbody>tr>td{
+	border-top: 0px;
+}
+
+.date-color{
+	color:white;
+}
+
+#m-news > div:nth-child(4) > div > div > figure{
+	margin-top: 30px;
+	padding-top: 20px;
+}
+/******************************* fin news  *****************************/
+
+/******************************* presses *****************************/
+.title-presse{
+	text-align: center;
+	color:#DAB270;
+	padding-top: 44px;
+	padding-bottom: 20px;
+}
+
+
+.title-presse-year{
+	background-color: #DAB270;
+	text-align: center;
+	color: white;
+}
+
+.color-p-presse{
+	color: black;
+}
+
+
+.title-presse-archive{
+	background-color: #DAB270;
+	text-align: center;
+	 }
+
+.img-presse{
+		width: 300px;
+		height: 444px;
+		margin-top: 70px;
+		border-color: #DAB270;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 4px;
+	}
+	.centerImage {
+		text-align: center;
+	}
+.color-link-plusinfos:hover{
+	color:black;
+	text-decoration: none;
+}
+/******************************* presses *****************************/
+
+@media only screen and (max-width: 320px)
+{
+
+}
+
+@media only screen and (max-width: 568px)
+{
+	.img-presse{
+		width: 235px;
+		height: 344px;
+	}
+
+}
+

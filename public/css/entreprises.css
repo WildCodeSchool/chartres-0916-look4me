@@ -1,0 +1,274 @@
+@import 'https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+
+body
+{
+	background-color: #1b1816;
+}
+
+.container-fluid
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.imageFondEntreprises
+{
+	background-image: url("../img/entreprises/photoBanniereBusiness.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+	margin-top: -150px;
+}
+
+@media screen and (max-width: 980px)
+{
+	.imageFondEntreprises
+	{
+		background-image: url("../img/entreprises/photoBanniereBusiness980.jpg");
+		background-position: 80% 50%;
+		height: 340px;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.imageFondEntreprises
+	{
+		background-image: url("../img/entreprises/photoBanniereBusiness800.jpg");
+		background-position: 80% 50%;
+		height: 285px;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.imageFondEntreprises
+	{
+		background-image: url("../img/entreprises/photoBanniereBusiness360.jpg");
+		background-position: 80% 50%;
+		height: 340px;
+		margin-top: 50px;
+	}
+}
+
+.bloc-transparent
+{
+	background-color: rgba(71,60,53,0.7); /*#473c35*/
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	height: 75px;
+	width: 70%;
+	margin: auto;
+	margin-top: 615px;
+	padding: 20px 30px 20px 30px;
+}
+
+@media screen and (max-width: 980px)
+{
+	.bloc-transparent
+	{
+		width: 100%;
+		margin-top: 250px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.bloc-transparent
+	{
+		height: 50px;
+		width: 100%;
+		margin-top: 225px;
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.bloc-transparent
+	{
+		margin-top: 340px;
+		padding: 0;
+		height: 50px;
+		width: 100%;
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+.tailleTexte
+{
+	color: #ffffff;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 800px)
+{
+	.tailleTexte
+	{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.tailleTexte
+	{
+		font-size: 13px;
+	}
+}
+
+.prestationsEntreprises
+{
+	color: #C79C51;
+	font-size: 30px;
+	font-family: 'El Messiri', sans-serif;
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 770px)
+{
+	.prestationsEntreprises
+	{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.prestationsEntreprises
+	{
+		font-size: 20px;
+		margin-top: 25px;
+	}
+}
+
+.separator
+{
+	background-color: #C93;
+	border: none;
+	height: 3px;
+	width: 100%;
+}
+
+.titrePrestationEntreprises
+{
+	color: #C79C51;
+	font-size: 24px;
+}
+
+.tailleDescriptionEntreprises
+{
+	font-size: 14px;
+}
+
+@media screen and (max-width: 360px)
+{
+	.titrePrestationEntreprises
+	{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.descriptionPrestationEntreprises
+	{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.tarifsEntreprises
+	{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.descriptionTarifsEntreprises
+	{
+		font-size: 14px;
+	}
+}
+
+ul
+{
+	padding-left: 15px;
+}
+
+
+
+/******************************* button (bouton contact) ****************************/
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: darkgoldenrod;
+	border: solid 2px goldenrod;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 2px;
+	width: 75%;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	vertical-align: middle;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+@media screen and (max-width: 800px)
+{
+	.button
+	{
+		display: inline-block;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	.button
+	{
+		display: inline-block;
+		width: 75px;
+		margin-right: 100px;
+		margin-left: -3px;
+	}
+}
+
+
+
+

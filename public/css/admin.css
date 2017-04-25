@@ -1,0 +1,10 @@
+#admin-bg{/***Wrap***/
+    background-color: #f4f8f9;
+    padding-bottom: 30px;
+}
+#admin{
+    padding-top: 100px;
+    margin: auto;
+    padding: auto;
+    max-width: 980px;
+}

@@ -1,0 +1,106 @@
+<div  id="contentformulaire" class="container-fluid">
+  <div id="content" class="row-fluid">
+
+    <!--FORMULAIRE PARTIE ADRESSE et COORDONNEES + CARTE GOOGLE-->
+    <div id="form1"  class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 ">
+        <div id="coordonnees" class="col-xs-12 col-sm-4 col-md-4  col-lg-4">
+          <span id="icon" class="glyphicon glyphicon-home"></span>
+          <p id="identite">{{coordonnees.identite}}</p></div>
+
+          <div id="adresse" class="col-xs-12 col-sm-4 col-md-4  col-lg-4">
+            <p ><big><big>{{coordonnees.name}}</big></big><br/>{{coordonnees.adresse}}<br/>{{coordonnees.ville}}</p>
+          </div>
+
+          <div id="phone" class="col-xs-12 col-sm-4 col-md-4  col-lg-4">
+            <div><span id="icon" class="glyphicon glyphicon-earphone"> </span>
+             <p id="telephone">{{coordonnees.telephone}}</p>
+           </div>
+
+           <div id="email">
+             <span id="icon-mail"><a data-email="contact@look4me.fr" href="mailto:"contact@look4me.fr" class="glyphicon glyphicon-envelope"></a> </span>
+             <p id="message"><a data-email="contact@look4me" href="mailto:natacha@look4me.fr">{{coordonnees.email}}</a></p>
+           </div>
+         </div>
+
+
+         <div class="row">
+           <div id="cartegooglemap" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.6047776791293!2d1.491279651084609!3d48.44492467914737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e40c4bef6ba155%3A0xa8518581ae536c66!2s7+Rue+de+la+Foulerie%2C+28000+Chartres!5e0!3m2!1sfr!2sfr!4v1476360390880" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+     <div id="form2" class="container-fluid">
+      <!--FORMULAIRE PARTIE CONTACT-->   
+      <div class="row">
+       <!-- <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate id="formcolor" role="form">
+          <div id="form-champs" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+            <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6">
+             <div id="votrestatut" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2 class="titrecontact">CONTACT</h2>
+              &lt;!&ndash;NAME&ndash;&gt;
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Votre nom" name="name" ng-model="user.name" required>
+              </div> &lt;!&ndash;USERNAME&ndash;&gt;
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Votre prénom" name="user.username" ng-model="user.username">
+              </div>
+              &lt;!&ndash; EMAIL &ndash;&gt;
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Votre email" name="user.email"  ng-model="user.email" required>
+              </div>
+            </div>
+            <div id="votrestatut" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2 class="statut">Précisez votre statut</h2>
+              <div id="btnchoixstatus" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <span ><a ><button class="btn statusbutton" ng-click="myFunc()"><span>Particulier</span></button></a></span><br/>
+                <span ><a ><button class="btn statusbutton" ng-click="myFunc2()"><span>Entreprise</span></button></a></span>
+              </div>
+
+              <div id="raison" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <h4>Raison de la demande</h4>
+                <form>
+                  <select id="deroulant" ng-show="showParticulier">
+                    <optgroup label="Femmes">
+                      <option ng-repeat="choice in listFemmes" ng-model="user.choice">{{choice}}</option>
+                    </optgroup>
+
+                    <optgroup label="Hommes">
+                      <option ng-repeat="choice in listHommes" ng-model="user.choice">{{choice}}</option>
+                    </optgroup>
+                  </select>
+                </form>
+                <form>
+                  <select  id="deroulant"  ng-show="showEntreprise">
+                    <optgroup  label="Entreprise">
+                      <option  ng-repeat="choice in listEntreprise" ng-model="user.choice">{{choice}}</option>
+                    </optgroup>
+                  </select>
+                </form>
+                </div>
+              </div>
+            </div>
+
+            <div id="blocmessage" class="col-sm-12 col-md-6 col-lg-6">
+             <div class="form-group">
+              <label class="titremessage" for="comment" ng-model="user.message">Votre message</label>
+              <textarea ng-model="formContact.contact.message"  class="form-control" rows="10" id="comment" required></textarea>
+              <span ><button ng-disabled="userForm.$invalid" class="animbutton pull-right voffset3" type="submit" value="Envoyer"><span>Envoyer</span></button></span>
+            </div>
+          </div>
+        </div>
+
+      </form>-->
+    </div>
+
+  </div><!--CONTAINER FORMULIARE 2 ROW 12-->
+
+
+</div>
+
+</div><!--content-->
+</div><!--content-fluid-->
+

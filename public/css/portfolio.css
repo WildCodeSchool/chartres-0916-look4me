@@ -1,0 +1,49 @@
+/* portfolio
+------------------------------------------------------------------------------*/
+#pfWrapper { margin-top: 80px;}
+
+#pfContent {
+    width:85%;
+    margin:auto;
+}
+
+#pfCarousel {
+    background-color: #000;
+    border: 2px solid #C79C51;
+    border-radius:4px;
+}
+
+/* suppression marges */
+#pfCarousel .carousel-inner .row,
+#pfCarousel .carousel-inner [class*="col-"] {
+    margin : 0;
+    padding: 0;
+}
+
+/* indicators (thumbnails) #annulation de styles bootstrap */
+#pfCarousel .carousel-indicators {
+    position: static;
+    left: auto;
+    margin: 20px auto;
+    width: 100%;
+}
+#pfCarousel .carousel-indicators li {
+    display: inline-block;
+    padding: 2px;
+    width: 84px;
+    height: 124px;
+    margin: 4px;
+    background-color: rgba(0,0,0,0.25);
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+#pfCarousel .carousel-indicators .active {
+    padding: 2px;
+    width: 84px;
+    height: 124px;
+    margin: 4px;
+    background-color: #C79C51;
+    border: none;
+}

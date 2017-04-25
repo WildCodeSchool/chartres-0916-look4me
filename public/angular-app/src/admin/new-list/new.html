@@ -1,0 +1,10 @@
+<div id="admin-bg" class="container-fluid">
+    <div id="admin" class="row">
+        <ul class="list-group" ng-repeat="new in vm.news">
+            <li class="list-group-item">
+               {{new.titre}} <a class="btn btn-primary" href="#/admin/news/update/{{new._id}}"> Edit </a> <a class="btn btn-warning" ng-click="vm.deleteNews(new._id)"> Supprimer </a>
+            </li>
+        </ul>
+        <a class="btn btn-primary" href="#/admin/news/add"> Ajouter une news </a>
+    </div>
+</div>

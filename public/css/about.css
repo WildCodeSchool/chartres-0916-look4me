@@ -1,0 +1,82 @@
+
+#presentation-bg{/***Wrap***/
+	background-color: #f4f8f9;
+	padding-bottom: 30px;
+}
+#presentation{
+	padding-top: 100px;
+	margin: auto;
+	padding: auto;
+	max-width: 980px;
+}
+
+#biographie{
+	margin: 0px;
+	padding: 0px;
+}
+
+#about-portrait{
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+
+}
+#portrait{
+	margin-bottom: 0px;
+}
+
+.about-titre{
+	font-size: 36px;
+	color: #C79C51;
+	font-family: 'El Messiri', sans-serif;
+	margin-left: 20px;;
+	margin-right: 20px;
+	margin-top: 0px;
+}
+
+.about-parag{
+	font-size: 16px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 20px;;
+	margin-right: 20px;
+}
+
+.about-btn{
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	background-color: #C79C51;
+}
+
+
+.about-btn a{
+	color:white;
+	text-decoration: none;
+}
+
+
+.about-btn:hover{
+	font-size: 16px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+#presentation-icon{
+	font-size: 18px;
+	float: right;
+	color: white;			
+}
+
+#about-icon{
+	font-size: 18px;
+	float: right;
+	color: white;
+	padding: 0px;
+	text-align: center;
+}

@@ -1,0 +1,22 @@
+<div  id="presentation-bg" class="container-fluid">
+
+<div id="presentation" class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+			<div id="about-portrait" class="col-sm-6 col-md-4 col-lg-4">
+				<p id="portrait"><img class="img-responsive" src="{{about.photo}}" alt=""></p>
+
+				<p class="about-btn" ><a href="#/contact">Me contacter<span id="about-icon" class="glyphicon glyphicon-envelope"></span></a>
+				</p>
+			</div>
+
+
+			<div id="biographie" class="col-sm-6 col-md-6 col-lg-8">
+
+				<h1 class="about-titre">{{about.title}}</h1>
+
+				<p class="about-parag" ng-bind-html="about.paragh"></p>
+			</div>
+		</div><!--fin row-->
+	</div>
+</div>

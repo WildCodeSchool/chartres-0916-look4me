@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="look4me">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="relooking, look4me, Natacha Tilmant, lookforme, look 4 me, coaching, chartres, 28000, relooking chartres, relooking eure et loir, relooking 78, relooking 28, coaching en image, coaching en image 28, coaching en image chartres" />
+  <link href="css/vendor-css/bootstrap-css/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/trix/0.9.2/trix.css">
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri|Expletus+Sans|Titillium+Web" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/headernav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/news.css">
+  <link rel="stylesheet" type="text/css" href="css/particuliers.css">
+  <link rel="stylesheet" type="text/css" href="css/entreprises.css">
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/Hover-master/css/hover.css">
+
+
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'>
+
+  <title>Look4Me</title>
+
+<body>
+
+
+<div ng-controller="headerCheck">
+  <headernav ng-show="headerhome === 0"></headernav>
+  <headerhome ng-show="headerhome === 1"></headerhome>
+</div>
+<!--<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  };
+});
+</script>-->
+<!--<a name="haut" id="haut"></a>-->
+
+
+<main ng-view></main>
+
+<!--<a id="cRetour" class="cInvisible" ng-click="store.goToHash()"></a>-->
+
+
+
+<footers class="page-footer"></footers>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="js/vendor/angular/ng-file-upload.shim.min.js"></script>
+<script type="text/javascript" src="js/vendor/angular/ng-file-upload.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trix/0.9.2/trix.js"></script>
+<script type="text/javascript" src="js/vendor/angular/angular-trix.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-sanitize.min.js"></script>
+<script src="js/vendor/angular/angular-jwt.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3B2dCQ2T9aJAkpvrRuwN_T1pmiVIjOEg" async defer></script>
+
+
+<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="angular-app/app.js"></script>
+<script type="text/javascript" src="angular-app/src/login/login-controller.js"></script>
+<script type="text/javascript" src="angular-app/src/auth/auth-factory.js"></script>
+<script type="text/javascript" src="angular-app/src/auth/auth-interceptor.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/admin-data-factory/admin-data-factory.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/gallery-add/galleryAddCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/gallery-list/galleryCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/new-list/newsCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/new-add/newsAddCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/new-update/newsUpdateCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/service-list/serviceCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/service-add/serviceAddCtrl.js"></script>
+<script type="text/javascript" src="angular-app/src/admin/service-update/serviceUpdateCtrl.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/particuliers.js"></script>
+
+
+<script src="js/modernizr.custom.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript" src="js/animate_burger.js"></script>
+
+
+</body>
+</html>

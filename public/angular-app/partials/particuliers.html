@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="imageFondParticuliers">
+            <div class="row">
+                <div class="bloc-info">
+                    <!-- ACCUEIL CHOIX FEMMES ou HOMMES -->
+                    <div id="buttonfemmes" class="col-lg-6 col-xs-6"><a data-toggle="tab" target="_self" ng-click="goToHash(1)" >FEMMES</a></div>
+                    <div id="buttonhommes" class="col-lg-5 col-xs-5"><a data-toggle="tab" target="_self" ng-click="goToHash(2)" >HOMMES</a></div>
+                    <div id="textHommesFemmes" class="col-lg-12 col-xs-12">"La beauté commence au moment où vous décidez d'être vous-même."<br><p class="signatureChanel">COCO CHANEL<p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li id="1" ng-class="{'active' : tab === 1}">
+            <a data-toggle="tab" target="_self" href="#menu1">FEMMES</a>
+        </li>
+        <li id="2" ng-class="{'active' : tab === 2}">
+            <a data-toggle="tab" target="_self" href="#menu2">HOMMES</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+
+
+        <!-- TAB MENU1 :: FEMMES =========================================== -->
+
+        <div id="menu1" ng-class="{'in active' : tab === 1}" class="tab-pane fade">
+            <!-- PRESTATIONS FEMMES -->
+            <div class="row">
+                <div class="col-sm-7 col-xs-7"><div class="prestationsParticuliers">Nos prestations</div>
+                <p class="texteInfo">Toutes nos prestations sont adaptables en fonction du nombre de personnes, occasions particulières et peuvent faire l'objet de bons cadeaux. Moyen de paiement : chèque ou espèces.</p>
+            </div>
+            <div class="col-sm-5 col-xs-5"><a href="#/news"><div class="ribbonbox"><h3>{{offreCadeau.titre}}</h3><h3>{{offreCadeau.texte}}</h3></div></a></div>
+        </div>
+        <hr class="separator">
+
+        <!-- Prestations Femmes-->
+        <div class="row" ng-repeat="service in servParticuliersF">
+            <div ng-if="service.genre == 'F'">
+                <div class="col-sm-4 col-xs-12"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+                <div class="col-sm-6 col-xs-7">
+                    <h3 class="titrePrestationParticuliers">{{service.titre}}</h3>
+                    <p class="descriptionPrestationParticuliers" ng-bind-html="service.description"></p>
+                </div>
+                <div class="col-sm-2 col-xs-5">
+                    <h3 class="tarifsParticuliers">TARIFS</h3>
+                    <h4 class="descriptionTarifsParticuliers">{{service.tarif}}</h4>
+                    <a href="#/contact"><button class="button"><span>contact</span></button></a>
+                </div>
+                <div class="col-xs-12"><hr></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TAB MENU2 :: HOMMES =========================================== -->
+
+    <div id="menu2" ng-class="{'in active' : tab === 2}" class="tab-pane fade">
+        <!-- PRESTATIONS HOMMES -->
+        <div class="row">
+            <div class="col-sm-7 col-xs-7"><div class="prestationsParticuliers">Nos prestations</div>
+            <p class="texteInfo">Moyen de paiement : chèque ou espèces.</p>
+        </div>
+        <div class="col-sm-5 col-xs-5"><a href="#/news"><div class="ribbonbox"><h3>{{offreCadeau.titre}}</h3><h3>{{offreCadeau.texte}}</h3></div></a></div></div>
+        <div class="col-xs-4"></div>
+        <hr class="separator">
+
+        <!-- Prestations Hommes-->
+        <div class="row" ng-repeat="service in servParticuliersH">
+            <div ng-if="service.genre == 'H'">
+                <div class="col-sm-4 col-xs-12"><img class="img-responsive" ng-src="{{service.img}}" alt="{{service.alt}}"></div>
+                <div class="col-sm-6 col-xs-7">
+                    <h3 class="titrePrestationParticuliers">{{service.titre}}</h3>
+                    <p class="descriptionPrestationParticuliers" ng-bind-html="service.description"></p>
+                </div>
+                <div class="col-sm-2 col-xs-5">
+                    <h3 class="tarifsParticuliers">TARIFS</h3>
+                    <h4 class="descriptionTarifsParticuliers">{{service.tarif}}</h4>
+                    <a href="#/contact"><button class="button"><span>contact</span></button></a>
+                </div>
+                <div class="col-xs-12"><hr></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

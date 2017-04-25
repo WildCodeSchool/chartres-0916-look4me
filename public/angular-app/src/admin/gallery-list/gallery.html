@@ -1,0 +1,10 @@
+<div id="admin-bg" class="container-fluid">
+    <div id="admin" class="row">
+        <ul class="list-group" ng-repeat="gallery in vm.galleries">
+            <li class="list-group-item">
+                {{gallery.titre}} <a class="btn btn-warning" ng-click="vm.deleteGallery(gallery._id)"> Supprimer </a>
+            </li>
+        </ul>
+        <a class="btn btn-primary" href="#/admin/gallery/add"> Ajouter une image Avant/Après </a>
+    </div>
+</div>

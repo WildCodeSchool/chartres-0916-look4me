@@ -1,0 +1,309 @@
+.row{
+  margin: 0px;
+  padding: 0px;
+}
+.col-{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#contentformulaire{
+}
+
+#content{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 980px;
+
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+/**********partie adresse et carte********************/
+
+#form1{
+  margin-bottom: 20px;
+  color:white;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+#coordonnees{
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#icon{
+  font-size: 22px;
+  display: block;
+  position: relative;
+  float: left;
+  color: #C79C51;
+  margin-right: 15px;}
+
+  #identite{  
+    font-size: 24px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'El Messiri', sans-serif;
+    line-height: 16px;
+    color:#C79C51;
+  }
+
+  #adresse{ 
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 18px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  #phone{
+    padding: 0px;
+    margin-top:0px;
+    margin-bottom: 20px;
+  }
+
+
+  #telephone{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 16px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+
+
+  #email{
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 16px;
+  }
+
+  #icon-mail{ 
+    font-size: 22px;
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    padding: 0px;}
+
+    #icon-mail a{
+      text-decoration: none;
+      color: #C79C51;
+    }
+    #icon-mail a:hover{
+      color: white;
+    }
+
+      #activite{  
+        font-size: 24px;
+        padding-top: 10px;
+        font-family: 'El Messiri', sans-serif;
+        line-height: 16px;
+      }
+
+
+      #message{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0px;
+      }
+      #message a{
+        text-decoration: none;
+        color: white;
+      }
+
+      #message a:hover{
+        color:#C79C51;}
+
+
+        .situation{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 24px;
+          color: #C79C51;
+          margin-top: 0px;
+          padding: 0px;
+        }
+
+        #cartegooglemap{
+          
+          border-bottom: 1px solid ;
+          border-color: #C79C51;
+          padding-bottom: 10px;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+
+        /***partie formulaire2**/
+
+        #form2{
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 0px;
+        }
+
+        .titrecontact{
+          font-size: 24px;
+          color: #C79C51;
+          text-align: center;
+          margin-bottom: 20px;
+          font-family: 'El Messiri', sans-serif;
+        }
+
+        #form-champs{
+          margin: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+
+        #votrestatut{
+          margin-bottom: 20px;
+          margin-top: 0px; 
+          padding: 0px;     
+        }
+        #votrestatut h2{
+          margin-top: 0px; 
+          padding: 0px;     
+        }
+
+        .statut{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 24px;
+          color: #C79C51; 
+             margin-top: 0px; 
+        }
+        #btnstatus{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 16px;
+          color: #C79C51; 
+          margin-left: 0px;
+          padding-left: 0px;
+
+        }
+
+        #raison{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 16px;
+          color: #C79C51; 
+          margin-left: 0px;
+          margin-top: 0px;
+          padding-top: 0px;
+          padding-left: 0px;
+        }
+         #raison h4{
+          margin-left: 0px;
+          margin-top: 0px;
+          padding-top: 0px;
+          padding-left: 0px;
+        }
+
+        #deroulant{
+          width: 100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-family: 'Open Sans', sans-serif;
+
+        }
+      
+        .listetitle{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 12px;
+          color: #C79C51;
+
+        }
+        #btnchoixstatus{
+          margin-left: 0px;
+          padding-left: 0px;
+        }
+        .statusbutton{
+          background-color: #C79C51;  
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        #blocmessage{
+          font-family: 'El Messiri', sans-serif;
+          font-size: 18px;
+          color: #C79C51;
+          margin: 10px;
+          padding-right:15px;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+
+        .titremessage{
+          padding-top: 5px;    
+          font-family: 'El Messiri', sans-serif;
+          font-size: 18px;
+          color: #C79C51;
+        }
+        #comment{
+          resize: vertical;
+          overflow: auto;
+        }
+
+
+        /****button bas animate css**/
+
+        .animbutton {
+          vertical-align:middle;
+          border-radius: 5px;
+          border: none;
+          display: inline-block;
+          background-color:#DAB270;   
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 14px;
+          padding-left: 15px;
+          padding-right: 20px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        .animbutton span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .animbutton span:after {
+          content: '»';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .animbutton:hover span {
+          padding-right: 25px;
+        }
+
+        .animbutton:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+        .animbutton span a{
+          text-decoration: none;
+          color:white;
+        }
+

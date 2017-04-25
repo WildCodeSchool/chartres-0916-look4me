@@ -1,0 +1,33 @@
+<div id="admin-bg" class="container-fluid" ng-if="isLoggedIn" style="padding-top: 200px">
+    <div id="admin" class="row">
+        <form name="vm.galleryForm" ng-submit="vm.addGallery()">
+            <div class="form-group">
+                <label for="titre"> Titre </label>
+                <input type="text" id="titre" name="titre" class="form-control" required ng-model="vm.titre">
+                <div ng-show="vm.newsForm.titre.$dirty && vm.newsForm.titre.$invalid && vm.isSubmitted">
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="temoignage">Témoignage </label>
+                <textarea type="text" name="temoignage" id="temoignage" class="form-control" required ng-model="vm.temoignage"></textarea>
+                <div ng-show="vm.newsForm.titre.$dirty && vm.newsForm.titre.$invalid && vm.isSubmitted">
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="avant"> Image avant </label>
+                <div class="button form-control" id="avant" ngf-select ng-model="vm.file1" name="file1" ngf-pattern="'image/*'"
+                     ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">Select image avant</div>
+            </div>
+            <div class="form-group">
+                <label for="apres"> Image après </label>
+                <div class="button form-control" id="apres" ngf-select ng-model="vm.file2" name="file2" ngf-pattern="'image/*'"
+                     ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100">Select image après</div>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-click="vm.AddGallery(file1,file2)">Ajouter les fichiers</button>
+        </form>
+    </div>
+</div>

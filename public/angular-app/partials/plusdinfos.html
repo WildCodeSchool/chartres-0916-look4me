@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html ng-app="Look4Me">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/vendor-css/bootstrap-css/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri|Expletus+Sans|Titillium+Web" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet" >
+  <link rel="stylesheet" href="../css/headernav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/news.css">
+  <link rel="stylesheet" type="text/css" href="../css/particuliers.css">
+  <link rel="stylesheet" type="text/css" href="../css/entreprises.css">
+  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" type="text/css" href="../css/plusdinfos.css">
+  <link rel="stylesheet" type="text/css" href="../css/Hover-master/css/hover.css">
+
+  <link rel='shortcut icon' href='../img/favicon.ico' type='image/x-icon'/ >
+
+  <title>Look4Me</title>
+
+<body>
+ <nav class="navbar navbar-default bg-nav navbar-fixed-top" ng-init="tab = 4">
+   <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" id="burger-nav" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="../img/logo/logo-mini.png" class="img-logo-mini-m">
+    </div>    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right yolo">
+                <li><a href="../#/" class="p-fa-home" style="padding: 0px;"><i class="fa fa-home fa-lg background-gold" aria-hidden="true"></i></a></li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 1}">
+                <a href="../#/particuliers" ng-click="tab = 1">
+                <p class="color-p-sidr">Particulier</p></a></li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 2}">
+                <a href="../#/entreprises" ng-click="tab = 2">
+                <p class="color-p-sidr">Entreprise</p></a></li>
+                <li><a href=""></a></li>
+
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 3}">
+                <a href="../#/portfolio" ng-click="tab = 3"><p class="color-p-sidr">Avant/Après</p></a></li>
+                <li><a href=""></a></li>
+
+                <li class="dropdown" ng-class="{active:tab === 4}">
+                  <a class="dropdown-toggle hover-nav hvr-bounce-to-bottom" id="abouther" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="tab = 4">A propos<span class="iconfleche"><i class="glyphicon glyphicon-menu-down"></i></span></a>
+                    <ul class="dropdown-menu" id="dropdown-menu" ng-class="{active:tab === 4}">
+                      <li><a href="../#/presentation" ng-class="{active:tab === 4}"><p class="color-p-sidr-dropdown">Presentation</p></a></li>
+                      <li><a href="../#/news" class="m-news" ng-class="{active:tab === 4}"><p class="color-p-sidr-dropdown">Presse/News</p></a></li>
+                    </ul>
+                </li>
+                <li><a href=""></a></li>
+                <li class="hover-nav hvr-bounce-to-bottom" ng-class="{active:tab === 5}">
+                <a href="../#/contact" ng-click="tab = 5"><p class="color-p-sidr">Contact</p></a></li>
+
+                <li><a href="https://www.facebook.com/look4me.fr" target="_blank" class="fa-p-none" style="padding: 0px;  margin-right: 5px; margin-left: 20px;"><i class="fa fa-facebook fa-lg background-gold menu" aria-hidden="true" style="width: 36px;"></i></a></li>
+                <li><a href="#" class="fa-p-none" style="padding: 0px; margin-left: 0px;"><i class="fa fa-instagram fa-lg background-gold menu" aria-hidden="true"></i></a></li>
+            </ul> 
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="row plusdinfos" ng-controller="plusdinfosController as plus" ng-class="{active:tab === 4}">
+        
+<div class="title-presse"><h1>Plus d'infos</h1></div> 
+<!-- news1 -->
+  <div class="col-xs-12 col-sm-4 col-md-4 ng-scope" ng-repeat="info in plus.objectPlusinfos">
+      <h1>{{info.titleinfo}}</h1>
+      <div class="thumbnail">
+      		<table class="table">
+                <tr>
+                  <td><a href="{{info.pdfinfo}}" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p class="color-presse-p">{{info.descriptioninfo}}</p></td>
+                </tr>
+                <tr>
+                  <td><a href="{{info.pdfinfo}}" target="_blank"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{info.descriptioninfo}}</p></td>
+                </tr>
+                 <tr>
+                  <td><a href="{{info.pdfinfo}}"><i class="fa fa-file-pdf-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{info.descriptioninfo}}</p></td>
+                </tr>
+                <tr>
+                  <td><a href="{{info.pdfinfo}}"><i class="fa fa-file-video-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{info.descriptioninfo}}</p></td>
+                </tr>
+                <tr>
+                  <td><a href="{{info.pdfinfo}}"><i class="fa fa-file-video-o fa-3x gold" aria-hidden="true"></i></a></td>
+                  <td><p>{{info.descriptioninfo}}</p></td>
+                </tr>
+            </table>
+      </div>
+  </div> 
+</div><!-- fin row--> 
+
+
+<div class="footerplus">
+  <div class="row partenaire">
+    <div class="col-xs-0 col-sm-0 col-lg-2">
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <h4>Mes partenaires</h4>
+      <ul>
+          <li><a href="http://www.phoxstudiomartino.com/" class="footerplus-a"><p>Photographe</p></a></li>
+          <li><a href="" class="footerplus-a"><p>Coiffeur femme</p></a></li>
+          <li><a href="" class="footerplus-a"><p>Coiffeur homme</p></a></li>
+          <li><a href="" class="footerplus-a"><p>Bijoux</p></a></li>
+      </ul>
+    </div>     
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+          <h4>Me situer</h4>
+          
+            <p class="color-p-footer">Natacha TILMANT :<br>
+            7 Rue de la Foulerie<br>
+            28000 Chartres</p>
+            <a href="" class="footer-a">Me contacter</a>
+          
+    </div>
+    <div class="col-xs-12 col-sm-3 col-lg-3">
+          <ul class="m-footer">
+            <li><a href="" class="footer-a">2016 (c) Looke4Me | Mention légal</a></li>
+            <li><a href="" class="footer-a">Site réalisé par la WildCodeSchool</a></li>
+          </ul>
+    </div>
+       
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-sanitize.min.js"></script>
+
+<script src="../js/vendor/bootstrap/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../js/app.js"></script>
+
+<script type="text/javascript" src="../js/header.js"></script>
+<script type="text/javascript" src="../js/particuliers.js"></script>
+
+
+<script src="../js/modernizr.custom.js"></script>
+<script src="../js/scrolling-nav.js"></script>
+<script type="text/javascript" src="../js/animate_burger.js"></script>
+
+
+</body>
+</html>
