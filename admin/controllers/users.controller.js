@@ -2,7 +2,7 @@
  * Created by rxmat on 23/11/2016.
  */
 var mongoose = require('mongoose');
-var User     = mongoose.model('User');
+var users     = mongoose.model('User');
 var bcrypt   = require('bcrypt-nodejs');
 var jwt      = require('jsonwebtoken');
 
@@ -11,7 +11,7 @@ module.exports.login = function(req, res) {
     var username = req.body.username;
     var password = req.body.password;
 
-    User.findOne({
+    users.findOne({
         username: username
     }).exec(function(err, user) {
         if (err) {
@@ -54,7 +54,7 @@ module.exports.register = function(req, res) {
     var name = req.body.name || null;
     var password = req.body.password;
 
-    User.create({
+    users.create({
         username: username,
         name: name,
         password: bcrypt.hashSync(password, bcrypt.genSaltSync(10))
