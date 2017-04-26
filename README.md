@@ -16,8 +16,15 @@ Accède ensuite à l'URL [http://localhost:3000](http://localhost:3000)
     > use look4me
     > db.users.insert({username:"admin", password:"$2a$10$g6iVUpxL.dQUb6.LesUyQ.PxWZ6getDbGjeuMrKYHlgAN0ohrm5rK"})
     > exit
-    
+
 Tu peux ensuite te connecter à l'administration [http://localhost:3000/#/admin](http://localhost:3000/#/admin) avec les identifiants suivants :
 
 * username : admin
 * password : admin
+
+## Notes de mise en prod
+
+Se connecter en SSH au serveur puis :
+
+    cd /home/look4me
+    pm2 start bin/www
